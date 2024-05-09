@@ -413,11 +413,45 @@ void game::timerEvent(QTimerEvent *event)
 
     if(event->timerId()==id1){
         int modx[2]={0},mody[2]={0};
+
+//        if(GetAsyncKeyState('A') & 0x8000){
+//                modx[1]--;
+//                this->ui->watergirl->setPixmap(QPixmap::fromImage(*ice_girl_left).scaled(width, height));
+//                this->ui->watergirl->move(this->ui->watergirl->x() - modx[1], this->ui->watergirl->y());
+//            }
+//            if(GetAsyncKeyState('D') & 0x8000){
+//                modx[1]++;
+//                this->ui->watergirl->setPixmap(QPixmap::fromImage(*ice_girl_right).scaled(width, height));
+//                this->ui->watergirl->move(this->ui->watergirl->x() + modx[1], this->ui->watergirl->y());
+//            }
+//            if(GetAsyncKeyState('W') & 0x8000){
+//                mody[1]++;
+//                this->ui->watergirl->setPixmap(QPixmap::fromImage(*ice_girl).scaled(width, height));
+//                this->ui->watergirl->move(this->ui->watergirl->x(), this->ui->watergirl->y() - mody[1]);
+//            }
+
+//            if(GetAsyncKeyState(VK_LEFT) & 0x8000){
+//                modx[0]--;
+//                this->ui->fireman->setPixmap(QPixmap::fromImage(*fire_boy_left).scaled(width, height));
+//                this->ui->fireman->move(this->ui->fireman->x() - modx[0], this->ui->fireman->y());
+//            }
+//            if(GetAsyncKeyState(VK_RIGHT) & 0x8000){
+//                modx[0]++;
+//                this->ui->fireman->setPixmap(QPixmap::fromImage(*fire_boy_right).scaled(width, height));
+//                this->ui->fireman->move(this->ui->fireman->x() + modx[0], this->ui->fireman->y());
+//            }
+//            if(GetAsyncKeyState(VK_UP) & 0x8000){
+//                mody[0]++;
+//                this->ui->fireman->setPixmap(QPixmap::fromImage(*fire_boy).scaled(width, height));
+//                this->ui->fireman->move(this->ui->fireman->x(), this->ui->fireman->y() - mody[0]);
+//            }
+
         if(GetAsyncKeyState('A')&0x8000){
             modx[1]--;
                 }
                 if(GetAsyncKeyState('D')&0x8000){
                     modx[1]++;
+
                 }
                 if(GetAsyncKeyState('W')&0x8000){
                     mody[1]++;
